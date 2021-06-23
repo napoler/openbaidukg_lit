@@ -301,7 +301,7 @@ def sweep_iteration():
         #         auto_scale_batch_size='binsearch',
         #         auto_lr_find=True,
         #         max_epochs=wandb.config.epochs,
-        max_epochs=5,
+        max_epochs=1,
         logger=wandb_logger,
         #         accumulate_grad_batches=wandb.config.accumulate_grad_batches
 
