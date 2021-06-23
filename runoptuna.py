@@ -242,7 +242,7 @@ def objective(trial: optuna.trial.Trial) -> float:
     devdataset=torch.load("devdataset.pkt")
     train_loader=DataLoader(traindataset,batch_size=batch_size, shuffle=True, )
     val_loader=DataLoader(devdataset,batch_size=batch_size, shuffle=False, )
-    test_loader=DataLoader(testdataset,batch_size=batch_size, shuffle=False, )
+    # test_loader=DataLoader(testdataset,batch_size=batch_size, shuffle=False, )
     model=LitAutoLM(learning_rate=learning_rate,optimizer_name=optimizer_name)
     
     trainer = pl.Trainer(
